@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "test-app-3",
+    "slug": "test-app-3",
+    "version": "0.1.0",
+    "scheme": "testapp3",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.testapp3",
+      "entitlements": {
+        "com.apple.developer.networking.wifi-info": true
+      },
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Location access is required by iOS to read the current WiFi SSID."
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "./modules/expo-homekit/app.plugin.js"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
