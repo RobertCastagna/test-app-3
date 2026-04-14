@@ -9,12 +9,16 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.example.testapp3",
+      "bundleIdentifier": "app.tminus.test-app-3",
       "entitlements": {
         "com.apple.developer.networking.wifi-info": true
       },
       "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "Location access is required by iOS to read the current WiFi SSID."
+        "NSLocationWhenInUseUsageDescription": "Location access is required by iOS to read the current WiFi SSID.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "config": {
+        "usesNonExemptEncryption": false
       }
     },
     "plugins": [
@@ -23,6 +27,9 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "web": {
+      "bundler": "metro"
     }
   }
 }

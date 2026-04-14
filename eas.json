@@ -9,13 +9,16 @@
       "distribution": "internal",
       "ios": {
         "simulator": false
-      }
+      },
+      "credentialsSource": "local"
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "credentialsSource": "local"
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "credentialsSource": "local"
     }
   },
   "submit": {

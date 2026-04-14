@@ -1,0 +1,137 @@
+{
+  "project_structure": [
+    "babel.config.js",
+    "expo-env.d.ts",
+    "eas.json",
+    "package.json",
+    "README.txt",
+    "tsconfig.json",
+    "package-lock.json",
+    "app.json",
+    ".gitignore",
+    "modules/expo-homekit/expo-module.config.json",
+    "modules/expo-homekit/ExpoHomeKit.podspec",
+    "modules/expo-homekit/package.json",
+    "modules/expo-homekit/app.plugin.js",
+    "modules/expo-homekit/index.ts",
+    "modules/expo-homekit/src/ExpoHomeKitModule.ts",
+    "modules/expo-homekit/src/ExpoHomeKit.types.ts",
+    "lib/homekit.ts",
+    "lib/wifi.ts",
+    "components/HomeSection.tsx",
+    "components/InfoRow.tsx",
+    "components/AccessoryRow.tsx",
+    "app/_layout.tsx",
+    "app/(tabs)/_layout.tsx",
+    "app/(tabs)/wifi.tsx",
+    "app/(tabs)/index.tsx"
+  ],
+  "config_files": {
+    "app.json": {
+      "expo": {
+        "name": "test-app-3",
+        "slug": "test-app-3",
+        "version": "0.1.0",
+        "scheme": "testapp3",
+        "orientation": "portrait",
+        "userInterfaceStyle": "automatic",
+        "newArchEnabled": true,
+        "ios": {
+          "supportsTablet": true,
+          "bundleIdentifier": "com.example.testapp3",
+          "entitlements": {
+            "com.apple.developer.networking.wifi-info": true
+          },
+          "infoPlist": {
+            "NSLocationWhenInUseUsageDescription": "Location access is required by iOS to read the current WiFi SSID."
+          }
+        },
+        "plugins": [
+          "expo-router",
+          "./modules/expo-homekit/app.plugin.js"
+        ],
+        "experiments": {
+          "typedRoutes": true
+        }
+      }
+    },
+    "package.json": {
+      "name": "test-app-3",
+      "version": "0.1.0",
+      "main": "expo-router/entry",
+      "scripts": {
+        "start": "expo start",
+        "ios": "expo run:ios",
+        "prebuild": "expo prebuild --clean",
+        "typecheck": "tsc --noEmit"
+      },
+      "dependencies": {
+        "expo": "~54.0.0",
+        "expo-router": "~6.0.0",
+        "expo-status-bar": "~3.0.0",
+        "expo-constants": "~18.0.0",
+        "expo-linking": "~8.0.0",
+        "expo-modules-core": "~3.0.0",
+        "react": "19.1.0",
+        "react-native": "0.81.0",
+        "react-native-safe-area-context": "~5.5.0",
+        "react-native-screens": "~4.11.0",
+        "@react-native-community/netinfo": "~12.0.0"
+      },
+      "devDependencies": {
+        "@types/react": "~19.1.0",
+        "typescript": "~5.9.0"
+      },
+      "private": true
+    },
+    "eas.json": {
+      "cli": {
+        "version": ">= 12.0.0",
+        "appVersionSource": "remote"
+      },
+      "build": {
+        "development": {
+          "developmentClient": true,
+          "distribution": "internal",
+          "ios": {
+            "simulator": false
+          }
+        },
+        "preview": {
+          "distribution": "internal"
+        },
+        "production": {
+          "autoIncrement": true
+        }
+      },
+      "submit": {
+        "production": {}
+      }
+    }
+  },
+  "dependencies": {
+    "expo": "~54.0.0",
+    "expo-router": "~6.0.0",
+    "expo-status-bar": "~3.0.0",
+    "expo-constants": "~18.0.0",
+    "expo-linking": "~8.0.0",
+    "expo-modules-core": "~3.0.0",
+    "react": "19.1.0",
+    "react-native": "0.81.0",
+    "react-native-safe-area-context": "~5.5.0",
+    "react-native-screens": "~4.11.0",
+    "@react-native-community/netinfo": "~12.0.0"
+  },
+  "navigation_structure": "Not fully analyzed in this version",
+  "permissions": [
+    {
+      "ios_infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Location access is required by iOS to read the current WiFi SSID."
+      }
+    }
+  ],
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "typescript": "~5.9.0"
+  }
+}
