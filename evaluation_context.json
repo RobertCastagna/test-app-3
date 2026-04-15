@@ -14,6 +14,7 @@
     "components/HomeSection.tsx",
     "components/AccessoryRow.tsx",
     "assets/icon.png",
+    "assets/images/splash-icon.png",
     "modules/expo-homekit/index.ts",
     "modules/expo-homekit/package.json",
     "modules/expo-homekit/expo-module.config.json",
@@ -72,7 +73,7 @@
           }
         },
         "splash": {
-          "image": null,
+          "image": "./assets/images/splash-icon.png",
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
