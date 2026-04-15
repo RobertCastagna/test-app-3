@@ -1,28 +1,28 @@
 {
   "project_structure": [
-    "expo-env.d.ts",
+    "evaluation_context.json",
     "tsconfig.json",
-    "babel.config.js",
+    "app.json",
+    "eas.json",
     ".gitignore",
     "package.json",
-    "package-lock.json",
     "README.txt",
-    "eas.json",
-    "evaluation_context.json",
-    "app.json",
+    "babel.config.js",
+    "expo-env.d.ts",
+    "package-lock.json",
     "components/InfoRow.tsx",
     "components/HomeSection.tsx",
     "components/AccessoryRow.tsx",
     "assets/icon.png",
-    "lib/wifi.ts",
-    "lib/homekit.ts",
+    "modules/expo-homekit/index.ts",
     "modules/expo-homekit/package.json",
     "modules/expo-homekit/expo-module.config.json",
     "modules/expo-homekit/app.plugin.js",
-    "modules/expo-homekit/index.ts",
     "modules/expo-homekit/ExpoHomeKit.podspec",
-    "modules/expo-homekit/src/ExpoHomeKitModule.ts",
     "modules/expo-homekit/src/ExpoHomeKit.types.ts",
+    "modules/expo-homekit/src/ExpoHomeKitModule.ts",
+    "lib/homekit.ts",
+    "lib/wifi.ts",
     "app/_layout.tsx",
     "app/(tabs)/wifi.tsx",
     "app/(tabs)/index.tsx",
@@ -60,7 +60,8 @@
           "typedRoutes": true
         },
         "web": {
-          "bundler": "metro"
+          "bundler": "metro",
+          "favicon": null
         },
         "icon": "./assets/icon.png",
         "owner": "robert_castagna",
@@ -69,6 +70,11 @@
           "eas": {
             "projectId": "dbc6d8ec-b58c-47fe-8b3e-2f3fa5684fe5"
           }
+        },
+        "splash": {
+          "image": null,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
         }
       }
     },
@@ -93,6 +99,7 @@
         "expo-router": "~6.0.0",
         "expo-status-bar": "~3.0.0",
         "react": "19.1.0",
+        "react-dom": "19.1.0",
         "react-native": "0.81.0",
         "react-native-safe-area-context": "~5.5.0",
         "react-native-screens": "~4.11.0",
@@ -145,6 +152,7 @@
     "expo-router": "~6.0.0",
     "expo-status-bar": "~3.0.0",
     "react": "19.1.0",
+    "react-dom": "19.1.0",
     "react-native": "0.81.0",
     "react-native-safe-area-context": "~5.5.0",
     "react-native-screens": "~4.11.0",
