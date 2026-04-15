@@ -1,30 +1,32 @@
 {
   "project_structure": [
-    "babel.config.js",
     "expo-env.d.ts",
-    "eas.json",
-    "package.json",
-    "README.txt",
     "tsconfig.json",
-    "package-lock.json",
-    "app.json",
+    "babel.config.js",
     ".gitignore",
-    "modules/expo-homekit/expo-module.config.json",
-    "modules/expo-homekit/ExpoHomeKit.podspec",
+    "package.json",
+    "package-lock.json",
+    "README.txt",
+    "eas.json",
+    "evaluation_context.json",
+    "app.json",
+    "components/InfoRow.tsx",
+    "components/HomeSection.tsx",
+    "components/AccessoryRow.tsx",
+    "assets/icon.png",
+    "lib/wifi.ts",
+    "lib/homekit.ts",
     "modules/expo-homekit/package.json",
+    "modules/expo-homekit/expo-module.config.json",
     "modules/expo-homekit/app.plugin.js",
     "modules/expo-homekit/index.ts",
+    "modules/expo-homekit/ExpoHomeKit.podspec",
     "modules/expo-homekit/src/ExpoHomeKitModule.ts",
     "modules/expo-homekit/src/ExpoHomeKit.types.ts",
-    "lib/homekit.ts",
-    "lib/wifi.ts",
-    "components/HomeSection.tsx",
-    "components/InfoRow.tsx",
-    "components/AccessoryRow.tsx",
     "app/_layout.tsx",
-    "app/(tabs)/_layout.tsx",
     "app/(tabs)/wifi.tsx",
-    "app/(tabs)/index.tsx"
+    "app/(tabs)/index.tsx",
+    "app/(tabs)/_layout.tsx"
   ],
   "config_files": {
     "app.json": {
@@ -38,12 +40,16 @@
         "newArchEnabled": true,
         "ios": {
           "supportsTablet": true,
-          "bundleIdentifier": "com.example.testapp3",
+          "bundleIdentifier": "app.tminus.test-app-3",
           "entitlements": {
             "com.apple.developer.networking.wifi-info": true
           },
           "infoPlist": {
-            "NSLocationWhenInUseUsageDescription": "Location access is required by iOS to read the current WiFi SSID."
+            "NSLocationWhenInUseUsageDescription": "Location access is required by iOS to read the current WiFi SSID.",
+            "ITSAppUsesNonExemptEncryption": false
+          },
+          "config": {
+            "usesNonExemptEncryption": false
           }
         },
         "plugins": [
@@ -52,6 +58,17 @@
         ],
         "experiments": {
           "typedRoutes": true
+        },
+        "web": {
+          "bundler": "metro"
+        },
+        "icon": "./assets/icon.png",
+        "owner": "robert_castagna",
+        "extra": {
+          "router": {},
+          "eas": {
+            "projectId": "dbc6d8ec-b58c-47fe-8b3e-2f3fa5684fe5"
+          }
         }
       }
     },
@@ -63,26 +80,32 @@
         "start": "expo start",
         "ios": "expo run:ios",
         "prebuild": "expo prebuild --clean",
-        "typecheck": "tsc --noEmit"
+        "typecheck": "tsc --noEmit",
+        "android": "expo run:android"
       },
       "dependencies": {
+        "@react-native-community/netinfo": "~12.0.0",
+        "babel-preset-expo": "~54.0.10",
         "expo": "~54.0.0",
-        "expo-router": "~6.0.0",
-        "expo-status-bar": "~3.0.0",
         "expo-constants": "~18.0.0",
         "expo-linking": "~8.0.0",
         "expo-modules-core": "~3.0.0",
+        "expo-router": "~6.0.0",
+        "expo-status-bar": "~3.0.0",
         "react": "19.1.0",
         "react-native": "0.81.0",
         "react-native-safe-area-context": "~5.5.0",
         "react-native-screens": "~4.11.0",
-        "@react-native-community/netinfo": "~12.0.0"
+        "react-native-web": "^0.21.0"
       },
       "devDependencies": {
         "@types/react": "~19.1.0",
         "typescript": "~5.9.0"
       },
-      "private": true
+      "private": true,
+      "overrides": {
+        "react-dom": "19.1.0"
+      }
     },
     "eas.json": {
       "cli": {
@@ -95,13 +118,16 @@
           "distribution": "internal",
           "ios": {
             "simulator": false
-          }
+          },
+          "credentialsSource": "local"
         },
         "preview": {
-          "distribution": "internal"
+          "distribution": "internal",
+          "credentialsSource": "local"
         },
         "production": {
-          "autoIncrement": true
+          "autoIncrement": true,
+          "credentialsSource": "local"
         }
       },
       "submit": {
@@ -110,23 +136,26 @@
     }
   },
   "dependencies": {
+    "@react-native-community/netinfo": "~12.0.0",
+    "babel-preset-expo": "~54.0.10",
     "expo": "~54.0.0",
-    "expo-router": "~6.0.0",
-    "expo-status-bar": "~3.0.0",
     "expo-constants": "~18.0.0",
     "expo-linking": "~8.0.0",
     "expo-modules-core": "~3.0.0",
+    "expo-router": "~6.0.0",
+    "expo-status-bar": "~3.0.0",
     "react": "19.1.0",
     "react-native": "0.81.0",
     "react-native-safe-area-context": "~5.5.0",
     "react-native-screens": "~4.11.0",
-    "@react-native-community/netinfo": "~12.0.0"
+    "react-native-web": "^0.21.0"
   },
   "navigation_structure": "Not fully analyzed in this version",
   "permissions": [
     {
       "ios_infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "Location access is required by iOS to read the current WiFi SSID."
+        "NSLocationWhenInUseUsageDescription": "Location access is required by iOS to read the current WiFi SSID.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     }
   ],

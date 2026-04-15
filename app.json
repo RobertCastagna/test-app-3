@@ -29,7 +29,8 @@
       "typedRoutes": true
     },
     "web": {
-      "bundler": "metro"
+      "bundler": "metro",
+      "favicon": null
     },
     "icon": "./assets/icon.png",
     "owner": "robert_castagna",
@@ -38,6 +39,11 @@
       "eas": {
         "projectId": "dbc6d8ec-b58c-47fe-8b3e-2f3fa5684fe5"
       }
+    },
+    "splash": {
+      "image": null,
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     }
   }
 }
