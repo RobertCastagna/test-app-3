@@ -1,33 +1,33 @@
 {
   "project_structure": [
-    "app.json",
-    "README.txt",
-    "babel.config.js",
-    ".gitignore",
-    "evaluation_context.json",
     "eas.json",
-    "tsconfig.json",
+    "app.json",
     "package-lock.json",
-    "expo-env.d.ts",
+    "babel.config.js",
     "package.json",
-    "modules/expo-homekit/expo-module.config.json",
-    "modules/expo-homekit/ExpoHomeKit.podspec",
-    "modules/expo-homekit/index.ts",
-    "modules/expo-homekit/app.plugin.js",
-    "modules/expo-homekit/package.json",
-    "modules/expo-homekit/src/ExpoHomeKit.types.ts",
-    "modules/expo-homekit/src/ExpoHomeKitModule.ts",
+    ".gitignore",
+    "expo-env.d.ts",
+    "README.txt",
+    "evaluation_context.json",
+    "tsconfig.json",
     "components/AccessoryRow.tsx",
     "components/InfoRow.tsx",
     "components/HomeSection.tsx",
-    "assets/icon.png",
-    "assets/images/splash-icon.png",
+    "modules/expo-homekit/index.ts",
+    "modules/expo-homekit/ExpoHomeKit.podspec",
+    "modules/expo-homekit/package.json",
+    "modules/expo-homekit/app.plugin.js",
+    "modules/expo-homekit/expo-module.config.json",
+    "modules/expo-homekit/src/ExpoHomeKitModule.ts",
+    "modules/expo-homekit/src/ExpoHomeKit.types.ts",
     "lib/wifi.ts",
     "lib/homekit.ts",
+    "assets/icon.png",
+    "assets/images/splash-icon.png",
     "app/_layout.tsx",
-    "app/(tabs)/_layout.tsx",
     "app/(tabs)/index.tsx",
-    "app/(tabs)/wifi.tsx"
+    "app/(tabs)/wifi.tsx",
+    "app/(tabs)/_layout.tsx"
   ],
   "config_files": {
     "app.json": {
@@ -61,8 +61,7 @@
           "typedRoutes": true
         },
         "web": {
-          "bundler": "metro",
-          "favicon": null
+          "bundler": "metro"
         },
         "icon": "./assets/icon.png",
         "owner": "robert_castagna",
