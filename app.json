@@ -29,8 +29,7 @@
       "typedRoutes": true
     },
     "web": {
-      "bundler": "metro",
-      "favicon": null
+      "bundler": "metro"
     },
     "icon": "./assets/icon.png",
     "owner": "robert_castagna",

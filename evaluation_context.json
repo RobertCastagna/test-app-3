@@ -1,33 +1,33 @@
 {
   "project_structure": [
-    "evaluation_context.json",
-    "tsconfig.json",
     "app.json",
-    "eas.json",
-    ".gitignore",
-    "package.json",
     "README.txt",
     "babel.config.js",
-    "expo-env.d.ts",
+    ".gitignore",
+    "evaluation_context.json",
+    "eas.json",
+    "tsconfig.json",
     "package-lock.json",
-    "components/InfoRow.tsx",
-    "components/HomeSection.tsx",
-    "components/AccessoryRow.tsx",
-    "assets/icon.png",
-    "assets/images/splash-icon.png",
-    "modules/expo-homekit/index.ts",
-    "modules/expo-homekit/package.json",
+    "expo-env.d.ts",
+    "package.json",
     "modules/expo-homekit/expo-module.config.json",
-    "modules/expo-homekit/app.plugin.js",
     "modules/expo-homekit/ExpoHomeKit.podspec",
+    "modules/expo-homekit/index.ts",
+    "modules/expo-homekit/app.plugin.js",
+    "modules/expo-homekit/package.json",
     "modules/expo-homekit/src/ExpoHomeKit.types.ts",
     "modules/expo-homekit/src/ExpoHomeKitModule.ts",
-    "lib/homekit.ts",
+    "components/AccessoryRow.tsx",
+    "components/InfoRow.tsx",
+    "components/HomeSection.tsx",
+    "assets/icon.png",
+    "assets/images/splash-icon.png",
     "lib/wifi.ts",
+    "lib/homekit.ts",
     "app/_layout.tsx",
-    "app/(tabs)/wifi.tsx",
+    "app/(tabs)/_layout.tsx",
     "app/(tabs)/index.tsx",
-    "app/(tabs)/_layout.tsx"
+    "app/(tabs)/wifi.tsx"
   ],
   "config_files": {
     "app.json": {
@@ -91,29 +91,25 @@
         "android": "expo run:android"
       },
       "dependencies": {
-        "@react-native-community/netinfo": "~12.0.0",
+        "@react-native-community/netinfo": "~11.4.0",
         "babel-preset-expo": "~54.0.10",
         "expo": "~54.0.0",
         "expo-constants": "~18.0.0",
         "expo-linking": "~8.0.0",
-        "expo-modules-core": "~3.0.0",
         "expo-router": "~6.0.0",
         "expo-status-bar": "~3.0.0",
         "react": "19.1.0",
         "react-dom": "19.1.0",
-        "react-native": "0.81.0",
-        "react-native-safe-area-context": "~5.5.0",
-        "react-native-screens": "~4.11.0",
+        "react-native": "0.81.5",
+        "react-native-safe-area-context": "~5.6.0",
+        "react-native-screens": "~4.16.0",
         "react-native-web": "^0.21.0"
       },
       "devDependencies": {
         "@types/react": "~19.1.0",
         "typescript": "~5.9.0"
       },
-      "private": true,
-      "overrides": {
-        "react-dom": "19.1.0"
-      }
+      "private": true
     },
     "eas.json": {
       "cli": {
@@ -144,19 +140,18 @@
     }
   },
   "dependencies": {
-    "@react-native-community/netinfo": "~12.0.0",
+    "@react-native-community/netinfo": "~11.4.0",
     "babel-preset-expo": "~54.0.10",
     "expo": "~54.0.0",
     "expo-constants": "~18.0.0",
     "expo-linking": "~8.0.0",
-    "expo-modules-core": "~3.0.0",
     "expo-router": "~6.0.0",
     "expo-status-bar": "~3.0.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-native": "0.81.0",
-    "react-native-safe-area-context": "~5.5.0",
-    "react-native-screens": "~4.11.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
     "react-native-web": "^0.21.0"
   },
   "navigation_structure": "Not fully analyzed in this version",
