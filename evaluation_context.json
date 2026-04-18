@@ -9,6 +9,7 @@
     "package.json",
     ".gitignore",
     "expo-env.d.ts",
+    "credentials.json",
     "app.json",
     "assets/icon.png",
     "assets/images/splash-icon.png",
@@ -103,7 +104,7 @@
         "react-native": "0.81.5",
         "react-native-safe-area-context": "~5.6.0",
         "react-native-screens": "~4.16.0",
-        "react-native-web": "^0.21.0"
+        "react-native-web": "^0.21.2"
       },
       "devDependencies": {
         "@types/react": "~19.1.0",
@@ -152,7 +153,7 @@
     "react-native": "0.81.5",
     "react-native-safe-area-context": "~5.6.0",
     "react-native-screens": "~4.16.0",
-    "react-native-web": "^0.21.0"
+    "react-native-web": "^0.21.2"
   },
   "navigation_structure": "Not fully analyzed in this version",
   "permissions": [
